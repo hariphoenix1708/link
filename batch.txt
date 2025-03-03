@@ -32,10 +32,16 @@ $https://civitai.com/api/download/models/972770?type=Negative&format=Other
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/AissistXLv2-neg.pt
 
 #LORA
-$https://huggingface.co/phoenix-1708/DR_NED/resolve/main/outfit_1.zip
+₹https://huggingface.co/phoenix-1708/DR_NED/resolve/main/outfit_1.zip
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/details.zip
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/Expressive_H-000001.safetensors
 $https://civitai.com/api/download/models/486156?type=Model&format=SafeTensor
+$https://civitai.com/api/download/models/1446939?type=Model&format=SafeTensor
+$https://civitai.com/api/download/models/135867?type=Model&format=SafeTensor
+$https://civitai.com/api/download/models/1253442?type=Model&format=SafeTensor
+$https://civitai.com/api/download/models/1103832?type=Model&format=SafeTensor
+$https://civitai.com/api/download/models/1399731?type=Model&format=SafeTensor
+$https://civitai.com/api/download/models/1099059?type=Model&format=SafeTensor
 
 #EXTENSIONS
 @https://github.com/Bing-su/adetailer
