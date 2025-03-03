@@ -1,6 +1,6 @@
 #MODELS
 $https://huggingface.co/phoenix-1708/MAJIC/resolve/main/epicVisionB3-inpainting.safetensors
-$https://civitai.com/api/download/models/1410435?type=Model&format=SafeTensor&size=pruned&fp=fp16&token=a2fab2bb78fa416e631f84f42595e62e
+$https://civitai.com/api/download/models/1410435?type=Model&format=SafeTensor&size=pruned&fp=fp16
 
 #VAE
 $https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors
@@ -11,7 +11,7 @@ $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/Style-Unshaved.pt
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/breasts.pt
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/small_tits.pt
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/AissistXLv2.safetensors
-$https://civitai.com/api/download/models/720175?type=Model&format=SafeTensor&token=a2fab2bb78fa416e631f84f42595e62e
+$https://civitai.com/api/download/models/720175?type=Model&format=SafeTensor
 
 #EMBEDDINGS-NEGATIVE
 $https://huggingface.co/embed/negative/resolve/main/EasyNegative.pt
@@ -35,7 +35,7 @@ $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/AissistXLv2-neg.pt
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/outfit_1.zip
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/details.zip
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/Expressive_H-000001.safetensors
-$https://civitai.com/api/download/models/486156?type=Model&format=SafeTensor&token=a2fab2bb78fa416e631f84f42595e62e
+$https://civitai.com/api/download/models/486156?type=Model&format=SafeTensor
 
 #EXTENSIONS
 @https://github.com/Bing-su/adetailer
