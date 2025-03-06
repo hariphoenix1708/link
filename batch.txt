@@ -1,15 +1,15 @@
-#MODELS
+[]MODELS
 $https://huggingface.co/phoenix-1708/MAJIC/resolve/main/epicVisionB3-inpainting.safetensors
 $https://civitai.com/api/download/models/1464918?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealistic_v80Inpainting.safetensors**
 &https://civitai.com/api/download/models/1223643?type=Model&format=SafeTensor&size=pruned&fp=fp16   **realismByStableYogi_sd15V9.safetensors**
 &https://civitai.com/api/download/models/1410435?type=Model&format=SafeTensor&size=pruned&fp=fp16   **waiNSFWIllustrious_v110.safetensors**
 &https://civitai.com/api/download/models/1478064?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_v85.safetensors**
 
-#VAE
+[]VAE
 $https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors
 $https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl.vae.safetensors
 
-#EMBEDDINGS
+[]EMBEDDINGS
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/Style-Unshaved.pt
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/breasts.pt
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/small_tits.pt
@@ -18,7 +18,7 @@ $https://civitai.com/api/download/models/720175?type=Model&format=SafeTensor
 $https://civitai.com/api/download/models/1223635?type=Model&format=PickleTensor
 $https://civitai.com/api/download/models/775151?type=Model&format=SafeTensor
 
-#EMBEDDINGS-NEGATIVE
+[]EMBEDDINGS-NEGATIVE
 $https://huggingface.co/embed/negative/resolve/main/EasyNegative.pt
 $https://huggingface.co/gsdf/Counterfeit-V3.0/resolve/main/embedding/EasyNegativeV2.safetensors
 $https://huggingface.co/embed/negative/resolve/main/bad-hands-5.pt
@@ -38,7 +38,7 @@ $https://civitai.com/api/download/models/1223627?type=Negative&format=Other
 $https://civitai.com/api/download/models/772342?type=Negative&format=Other
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/AissistXLv2-neg.pt
 
-#LORA
+[]LORA
 ₹https://huggingface.co/phoenix-1708/DR_NED/resolve/main/outfit_1.zip
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/details.zip
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/Expressive_H-000001.safetensors
@@ -54,7 +54,7 @@ $https://civitai.com/api/download/models/1065885?type=Model&format=SafeTensor
 $https://civitai.com/api/download/models/126294?type=Model&format=SafeTensor
 $https://civitai.com/api/download/models/135764?type=Model&format=SafeTensor
 
-#EXTENSIONS
+[]EXTENSIONS
 @https://github.com/Bing-su/adetailer
 @https://github.com/BlafKing/sd-civitai-browser-plus
 @https://github.com/Mikubill/sd-webui-controlnet
