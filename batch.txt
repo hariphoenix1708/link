@@ -60,5 +60,4 @@ $https://civitai.com/api/download/models/135764?type=Model&format=SafeTensor
 @https://github.com/BlafKing/sd-civitai-browser-plus
 @https://github.com/Mikubill/sd-webui-controlnet
 @https://github.com/licyk/advanced_euler_sampler_extension
-@https://github.com/AnonymousCervine/base64image-gradio-gallery-monkeypatch
 @https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
