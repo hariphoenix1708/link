@@ -61,7 +61,5 @@ $https://civitai.com/api/download/models/135764?type=Model&format=SafeTensor
 @https://github.com/Mikubill/sd-webui-controlnet
 @https://github.com/licyk/advanced_euler_sampler_extension
 @https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
-@https://github.com/mix1009/model-keyword
 @https://github.com/imrayya/stable-diffusion-webui-Prompt_Generator
-@https://github.com/lobehub/sd-webui-lobe-theme
 @https://github.com/zero01101/openOutpaint-webUI-extension
