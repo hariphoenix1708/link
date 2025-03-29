@@ -2,9 +2,10 @@
 $https://huggingface.co/phoenix-1708/MAJIC/resolve/main/epicVisionB4-inpainting.safetensors
 &https://civitai.com/api/download/models/1464918?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealistic_v80Inpainting.safetensors**
 &https://civitai.com/api/download/models/1223643?type=Model&format=SafeTensor&size=pruned&fp=fp16   **realismByStableYogi_sd15V9.safetensors**
-$https://civitai.com/api/download/models/1490781?type=Model&format=SafeTensor&size=pruned&fp=fp16   **waiNSFWIllustrious_v120.safetensors**
+&https://civitai.com/api/download/models/1490781?type=Model&format=SafeTensor&size=pruned&fp=fp16   **waiNSFWIllustrious_v120.safetensors**
 &https://civitai.com/api/download/models/1478064?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_v85.safetensors**
 &https://civitai.com/api/download/models/1469033?type=Model&format=SafeTensor&size=pruned&fp=fp16   **epicrealismXL_vxvAnewstoryRealism.safetensors**
+$https://civitai.com/api/download/models/456538?type=Model&format=SafeTensor&size=pruned&fp=fp16    **juggernautXL_versionXInpaint.safetensors**
 
 []VAE
 $https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors
