@@ -55,6 +55,7 @@ $https://civitai.com/api/download/models/622808?type=Model&format=SafeTensor
 $https://civitai.com/api/download/models/1065885?type=Model&format=SafeTensor
 $https://civitai.com/api/download/models/126294?type=Model&format=SafeTensor
 $https://civitai.com/api/download/models/135764?type=Model&format=SafeTensor
+$https://civitai.com/api/download/models/530662?type=Model&format=SafeTensor
 
 []EXTENSIONS
 @https://github.com/Bing-su/adetailer
