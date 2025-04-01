@@ -5,7 +5,7 @@ $https://huggingface.co/phoenix-1708/MAJIC/resolve/main/epicVisionB4-inpainting.
 &https://civitai.com/api/download/models/1490781?type=Model&format=SafeTensor&size=pruned&fp=fp16   **waiNSFWIllustrious_v120.safetensors**
 &https://civitai.com/api/download/models/1478064?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_v85.safetensors**
 &https://civitai.com/api/download/models/1469033?type=Model&format=SafeTensor&size=pruned&fp=fp16   **epicrealismXL_vxvAnewstoryRealism.safetensors**
-$https://civitai.com/api/download/models/1535626?type=Model&format=SafeTensor&size=full&fp=fp16      **matureRitualMILFOFGOD_v05.safetensors**
+$https://civitai.com/api/download/models/1199750?type=Model&format=SafeTensor&size=pruned&fp=fp16   **prefectPonyXL_v50.safetensors**
 
 []VAE
 $https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors
