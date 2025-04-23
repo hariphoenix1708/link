@@ -1,6 +1,6 @@
 []MODELS
-&https://huggingface.co/phoenix-1708/MAJIC/resolve/main/epicVisionB4-inpainting.safetensors
-$https://civitai.com/api/download/models/1691220?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_v90Alt1.safetensors**
+$https://huggingface.co/phoenix-1708/MAJIC/resolve/main/epicVisionB4-inpainting.safetensors
+&https://civitai.com/api/download/models/1691220?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_v90Alt1.safetensors**
 &https://civitai.com/api/download/models/179446?type=Model&format=SafeTensor&size=full&fp=fp32      **perfectWorld_v6Baked.safetensors**
 &https://civitai.com/api/download/models/1223643?type=Model&format=SafeTensor&size=pruned&fp=fp16   **realismByStableYogi_sd15V9.safetensors**
 $https://civitai.com/api/download/models/1612720?type=Model&format=SafeTensor&size=pruned&fp=fp16   **waiNSFWIllustrious_v130.safetensors**
@@ -43,7 +43,7 @@ $https://civitai.com/api/download/models/772342?type=Negative&format=Other
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/AissistXLv2-neg.pt
 
 []LORA
-₹https://huggingface.co/phoenix-1708/DR_NED/resolve/main/outfit_1.zip
+&https://huggingface.co/phoenix-1708/DR_NED/resolve/main/outfit_1.zip
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/details.zip
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/Expressive_H-000001.safetensors
 $https://civitai.com/api/download/models/486156?type=Model&format=SafeTensor
