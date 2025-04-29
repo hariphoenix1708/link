@@ -39,6 +39,7 @@ $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/AissistXLv2-neg.pt
 []LORA
 
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/details.zip
+$https://huggingface.co/phoenix-1708/DR_NED/resolve/main/writing.zip
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/Expressive_H-000001.safetensors
 $https://civitai.com/api/download/models/135867?type=Model&format=SafeTensor **add-detail-xl**
 $https://civitai.com/api/download/models/1253442?type=Model&format=SafeTensor **feet_anime_il_v2.5**
