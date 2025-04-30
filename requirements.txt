@@ -1,7 +1,6 @@
 pyngrok
 fastapi
 insightface
-pinggy
 ZipUnicode
 mediapipe==0.10.15
 protobuf==4.25.6
