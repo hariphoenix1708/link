@@ -158,6 +158,26 @@ urllib.request.urlretrieve(
     "ui-config.json"
 )
 
+import zipfile
+
+# Extract Lora zip if it exists
+lora_zip_path = "./models/Lora/details.zip"
+lora_extract_dir = "./models/Lora"
+
+if os.path.exists(lora_zip_path):
+    try:
+        print(f"Extracting Lora models from {lora_zip_path}...")
+        with zipfile.ZipFile(lora_zip_path, 'r') as zip_ref:
+            zip_ref.extractall(lora_extract_dir)
+        print("Extraction complete ✅")
+        os.remove(lora_zip_path)
+        print("Cleaned up zip file 🗑️")
+    except zipfile.BadZipFile:
+        print("Error: Bad ZIP file!")
+else:
+    print(f"No zip file found at {lora_zip_path}")
+
+
 # NGROK CONFIG
 ORIENTED = False
 ADEQUATE = True
