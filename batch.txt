@@ -1,7 +1,7 @@
 []MODELS
-&https://huggingface.co/phoenix-1708/MAJIC/resolve/main/epicVisionB4-inpainting.safetensors
+$https://huggingface.co/phoenix-1708/MAJIC/resolve/main/epicVisionB4-inpainting.safetensors
 $https://civitai.com/api/download/models/1761560?type=Model&format=SafeTensor&size=pruned&fp=fp16   **waiNSFWIllustrious_v140.safetensors**
-$https://civitai.com/api/download/models/1791065?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_v10.safetensors**
+&https://civitai.com/api/download/models/1791065?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_v10.safetensors**
 &https://civitai.com/api/download/models/1711508?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_catalyst_v11.safetensors**
 &https://civitai.com/api/download/models/179446?type=Model&format=SafeTensor&size=full&fp=fp32      **perfectWorld_v6Baked.safetensors**
 &https://civitai.com/api/download/models/1223643?type=Model&format=SafeTensor&size=pruned&fp=fp16   **realismByStableYogi_sd15V9.safetensors**
