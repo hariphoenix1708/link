@@ -48,8 +48,8 @@ if INSTALL_DEPS:
         "https://github.com/hariphoenix1708/link/raw/refs/heads/main/requirements.txt",
         "requirements.txt"
     )
-    subprocess.run(["uv", "cache", "clean"])
-    subprocess.run(["uv", "pip", "install", "--system", "-q", "-r", "requirements.txt"])
+    subprocess.run(["pip", "purge", "cache"])
+    subprocess.run(["pip", "install", "-q", "-r", "requirements.txt"])
 
 
 def get_filename_from_url(url):
