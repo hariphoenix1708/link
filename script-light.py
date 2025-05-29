@@ -49,7 +49,10 @@ if INSTALL_DEPS:
         "https://github.com/hariphoenix1708/link/raw/refs/heads/main/requirements.txt",
         "requirements.txt"
     )
-    subprocess.run(["pip", "purge", "cache"])
+    '''
+    subprocess.run(["pip", "cache", "purge"])
+    subprocess.run(["pip", "uninstall", "-y", "xformers", "torch", "torchvision", "torchaudio"])
+    '''
     subprocess.run(["pip", "install", "-q", "-r", "requirements.txt"])
     '''
 
