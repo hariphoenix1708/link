@@ -216,6 +216,6 @@ else:
     share = "--share"
 
 # Launch WebUI
-LAUNCH_CMD = f"python launch.py {share} --xformers --cuda-stream --always-gpu --pin-shared-memory --api --listen --enable-insecure-extension-access {auth} --disable-console-progressbars --no-hashing --precision autocast --upcast-sampling"
+LAUNCH_CMD = f"python launch.py --xformers --api --listen --enable-insecure-extension-access --disable-console-progressbars --no-hashing --precision autocast --upcast-sampling"
 print(f"Starting WebUI with command:\n{LAUNCH_CMD}")
 os.system(LAUNCH_CMD)
