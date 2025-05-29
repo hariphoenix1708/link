@@ -40,12 +40,6 @@ if INSTALL_DEPS:
     subprocess.run(["sudo", "apt-get", "update", "-y"])
     subprocess.run(["sudo", "apt", "--fix-broken", "install", "-y"])
     subprocess.run(["sudo", "apt", "-y", "install", "-qq", "aria2"])
-    '''
-    urllib.request.urlretrieve(
-        "https://github.com/hariphoenix1708/link/raw/refs/heads/main/requirements.txt",
-        "requirements.txt"
-    )
-    '''
     subprocess.run(["pip", "cache", "purge"])
     subprocess.run(["pip", "uninstall", "-y", "xformers", "torch", "torchvision", "torchaudio"])
 
