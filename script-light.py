@@ -51,6 +51,9 @@ if INSTALL_DEPS:
     )
     '''
     subprocess.run(["pip", "cache", "purge"])
+    subprocess.run(["pip", "install", "pickleshare"])
+    subprocess.run(["pip", "install", "basicsr"])
+    subprocess.run(["pip", "install", "insightface"])
     subprocess.run(["pip", "uninstall", "-y", "xformers", "torch", "torchvision", "torchaudio"])
     '''
     subprocess.run(["pip", "install", "-q", "-r", "requirements.txt"])
