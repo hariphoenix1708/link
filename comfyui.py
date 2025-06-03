@@ -46,12 +46,12 @@ def get_filename_from_url(url):
     return os.path.basename(parsed.path)
 
 # --- Install system packages ---
-run("apt update && apt install -y aria2 git curl python3 python3-pip python3-venv")
+run("sudo apt update && sudo apt install -y aria2 git curl python3 python3-pip python3-venv")
 
 # === INSTALL CLOUDFLARED ===
 if not os.path.exists("/usr/local/bin/cloudflared"):
     run("wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb")
-    run("dpkg -i cloudflared-linux-amd64.deb || apt install -f -y")
+    run("sudo dpkg -i cloudflared-linux-amd64.deb || sudo apt install -f -y")
     run("rm cloudflared-linux-amd64.deb")
 
 # --- Clone ComfyUI ---
