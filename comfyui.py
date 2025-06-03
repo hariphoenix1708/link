@@ -67,7 +67,7 @@ run("pip uninstall -y torch torchvision xformers")
 #run("pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu121")
 run("pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128")
 #run("pip install xformers!=0.0.18 --extra-index-url https://download.pytorch.org/whl/cu121")
-run("pip install xformers!=0.0.18 --extra-index-url https://download.pytorch.org/whl/nightly/cu128")
+#run("pip install xformers!=0.0.18 --extra-index-url https://download.pytorch.org/whl/nightly/cu128")
 run("pip install -r requirements.txt")
 
 # --- Download models ---
@@ -101,7 +101,7 @@ def iframe_thread(port):
 
 threading.Thread(target=iframe_thread, daemon=True, args=(8188,)).start()
 
-run("python3 main.py --dont-print-server")
+run("python3 main.py --dont-print-server --use-flash-attention --gpu-only")
 
 '''
 # --- Start ComfyUI server ---
