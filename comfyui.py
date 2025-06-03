@@ -67,7 +67,7 @@ run("pip uninstall -y torch torchvision xformers")
 #run("pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu121")
 run("pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128")
 #run("pip install xformers!=0.0.18 --extra-index-url https://download.pytorch.org/whl/cu121")
-#run("pip install xformers!=0.0.18 --extra-index-url https://download.pytorch.org/whl/nightly/cu128")
+run("pip install xformers!=0.0.18 --extra-index-url https://download.pytorch.org/whl/nightly/cu128 --no-deps")
 run("pip install -r requirements.txt")
 
 # --- Download models ---
@@ -82,7 +82,7 @@ for url, category in MODELS:
     else:
         run(f'aria2c --console-log-level=error -c -x 16 -s 16 -k 1M -d "{folder}" "{url}"')
 
-'''
+
 # --- Start Cloudflared ---
 def iframe_thread(port):
   while True:
@@ -101,9 +101,9 @@ def iframe_thread(port):
       print("This is the URL to access ComfyUI:", l[l.find("http"):], end='')
 
 threading.Thread(target=iframe_thread, daemon=True, args=(8188,)).start()
-'''
 
-run("python3 main.py --dont-print-server --use-flash-attention --gpu-only")
+
+run("python3 main.py --dont-print-server --gpu-only")
 
 '''
 # --- Start ComfyUI server ---
