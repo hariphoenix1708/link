@@ -65,8 +65,14 @@ run("pip install --upgrade pip")
 run("pip cache purge")
 run("pip uninstall -y torch torchvision xformers")
 
-content_path = os.path.expanduser("~/content")
-if os.path.exists(content_path):
+# Detect if running in Colab
+try:
+    import google.colab
+    is_colab = True
+except ImportError:
+    is_colab = False
+    
+if is_colab:
     run("pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu121")
     run("pip install xformers!=0.0.18 --extra-index-url https://download.pytorch.org/whl/cu121")
     run("pip install -r requirements.txt")
@@ -107,7 +113,7 @@ def iframe_thread(port):
 
 threading.Thread(target=iframe_thread, daemon=True, args=(8188,)).start()
 
-if os.path.exists(content_path):
+if is_colab:
     run("python3 main.py --dont-print-server")
 else:
     run("python3 main.py --dont-print-server --gpu-only")
