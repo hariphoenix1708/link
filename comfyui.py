@@ -64,11 +64,13 @@ os.chdir(COMFYUI_DIR)
 run("pip install --upgrade pip")
 run("pip cache purge")
 run("pip uninstall -y torch torchvision xformers")
-if os.path.exists("~/content"):
+
+content_path = os.path.expanduser("~/content")
+if os.path.exists(content_path):
     run("pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu121")
     run("pip install xformers!=0.0.18 --extra-index-url https://download.pytorch.org/whl/cu121")
     run("pip install -r requirements.txt")
-if not os.path.exists("~/content"):
+else:
     run("pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128")
     run("pip install xformers!=0.0.18 --extra-index-url https://download.pytorch.org/whl/nightly/cu128 --no-deps")
     run("pip install -r requirements.txt")
@@ -105,10 +107,9 @@ def iframe_thread(port):
 
 threading.Thread(target=iframe_thread, daemon=True, args=(8188,)).start()
 
-if os.path.exists("~/content"):
+if os.path.exists(content_path):
     run("python3 main.py --dont-print-server")
-
-if not os.path.exists("~/content"):
+else
     run("python3 main.py --dont-print-server --gpu-only")
 
 '''
