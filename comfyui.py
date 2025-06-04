@@ -109,7 +109,7 @@ threading.Thread(target=iframe_thread, daemon=True, args=(8188,)).start()
 
 if os.path.exists(content_path):
     run("python3 main.py --dont-print-server")
-else
+else:
     run("python3 main.py --dont-print-server --gpu-only")
 
 '''
