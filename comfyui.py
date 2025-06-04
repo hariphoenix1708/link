@@ -105,8 +105,11 @@ def iframe_thread(port):
 
 threading.Thread(target=iframe_thread, daemon=True, args=(8188,)).start()
 
+if os.path.exists("~/content"):
+    run("python3 main.py --dont-print-server")
 
-run("python3 main.py --dont-print-server --gpu-only")
+if not os.path.exists("~/content"):
+    run("python3 main.py --dont-print-server --gpu-only")
 
 '''
 # --- Start ComfyUI server ---
