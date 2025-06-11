@@ -17,6 +17,13 @@ $https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl.vae.safe
 []EMBEDDINGS
 $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/AissistXLv2.safetensors
 $https://civitai.com/api/download/models/720175?type=Model&format=SafeTensor **zPDXL3**
+$https://civitai.com/api/download/models/1833157?type=Model&format=SafeTensor **lazypos_v2**
+$https://civitai.com/api/download/models/1860747?type=Model&format=SafeTensor **lazyneg_v3**
+$https://civitai.com/api/download/models/1550840?type=Model&format=SafeTensor **lazyhand**
+$https://civitai.com/api/download/models/1558647?type=Model&format=SafeTensor **lazympos**
+$https://civitai.com/api/download/models/1601074?type=Model&format=SafeTensor **lazynsfw**
+$https://civitai.com/api/download/models/1667494?type=Model&format=SafeTensor **lazyreal**
+$https://civitai.com/api/download/models/1473211?type=Model&format=SafeTensor **lazyup7_pony**
 &https://civitai.com/api/download/models/1223635?type=Model&format=PickleTensor **Stable_Yogis_SD1.5_Positives**
 &https://civitai.com/api/download/models/775151?type=Model&format=SafeTensor **Stable_Yogis_PDXL_Positives**
 
