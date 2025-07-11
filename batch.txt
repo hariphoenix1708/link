@@ -1,9 +1,9 @@
 []MODELS
 $https://huggingface.co/phoenix-1708/MAJIC/resolve/main/epicVisionB4-inpainting.safetensors
 &https://civitai.com/api/download/models/1761560?type=Model&format=SafeTensor&size=pruned&fp=fp16   **waiNSFWIllustrious_v140.safetensors**
-$https://civitai.com/api/download/models/1915059?type=Model&format=SafeTensor&size=pruned&fp=fp16   **aMixIllustrious_aMix.safetensors**
+&https://civitai.com/api/download/models/1915059?type=Model&format=SafeTensor&size=pruned&fp=fp16   **aMixIllustrious_aMix.safetensors**
 &https://civitai.com/api/download/models/1873831?type=Model&format=SafeTensor&size=pruned&fp=fp16   **prefectIllustriousXL_v20p.safetensors**
-&https://civitai.com/api/download/models/1957537?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_v125.safetensors**
+$https://civitai.com/api/download/models/1957537?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_v125.safetensors**
 &https://civitai.com/api/download/models/1899516?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_catalystV30.safetensors**
 &https://civitai.com/api/download/models/179446?type=Model&format=SafeTensor&size=full&fp=fp32      **perfectWorld_v6Baked.safetensors**
 &https://civitai.com/api/download/models/1223643?type=Model&format=SafeTensor&size=pruned&fp=fp16   **realismByStableYogi_sd15V9.safetensors**
