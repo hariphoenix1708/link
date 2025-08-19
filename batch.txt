@@ -4,7 +4,7 @@ $https://huggingface.co/phoenix-1708/MAJIC/resolve/main/epicVisionB4-inpainting.
 &https://civitai.com/api/download/models/1915059?type=Model&format=SafeTensor&size=pruned&fp=fp16   **aMixIllustrious_aMix.safetensors**
 $https://civitai.com/api/download/models/2010753?type=Model&format=SafeTensor&size=pruned&fp=fp16   **hassakuXLIllustrious_v30.safetensors**
 &https://civitai.com/api/download/models/1873831?type=Model&format=SafeTensor&size=pruned&fp=fp16   **prefectIllustriousXL_v20p.safetensors**
-$https://civitai.com/api/download/models/2071650?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_v127Alt.safetensors**
+&https://civitai.com/api/download/models/2071650?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_v127Alt.safetensors**
 &https://civitai.com/api/download/models/1899516?type=Model&format=SafeTensor&size=pruned&fp=fp16   **cyberrealisticPony_catalystV30.safetensors**
 &https://civitai.com/api/download/models/179446?type=Model&format=SafeTensor&size=full&fp=fp32      **perfectWorld_v6Baked.safetensors**
 &https://civitai.com/api/download/models/1223643?type=Model&format=SafeTensor&size=pruned&fp=fp16   **realismByStableYogi_sd15V9.safetensors**
