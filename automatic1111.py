@@ -57,7 +57,7 @@ def robust_urlretrieve(url, filename):
 
         "https://github.com/hariphoenix1708/link/raw/refs/heads/main/requirements.txt",
         "requirements.txt"
-    )
+    #)
     subprocess.run(["uv", "cache", "clean"])
     subprocess.run(["uv", "pip", "install", "--system", "-q", "-r", "requirements.txt"])
 
