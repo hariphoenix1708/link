@@ -213,7 +213,9 @@ if NGROK_AUTHTOKEN and Ngrok_domain:
 else:
     share = "--share"
 
-# Launch WebUI
-LAUNCH_CMD = f"python launch.py {share} --gpu-device-id 1 --xformers --cuda-stream --always-gpu --pin-shared-memory --api --listen --enable-insecure-extension-access {auth} --disable-console-progressbars --no-hashing --precision autocast --upcast-sampling"
+# Launch WebUI FOR NORMAL FORGE
+#LAUNCH_CMD = f"python launch.py {share} --gpu-device-id 1 --xformers --cuda-stream --always-gpu --pin-shared-memory --api --listen --enable-insecure-extension-access {auth} --disable-console-progressbars --no-hashing --precision autocast --upcast-sampling"
+# FOR RE-FROGE
+LAUNCH_CMD = f"python launch.py {share} --xformers --api --listen --enable-insecure-extension-access {auth} --disable-console-progressbars --no-hashing"
 print(f"Starting WebUI with command:\n{LAUNCH_CMD}")
 os.system(LAUNCH_CMD)
