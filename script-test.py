@@ -31,7 +31,7 @@ WORKSPACE = 'stable-diffusion-webui-forge'
 if not os.path.exists(WORKSPACE):
     print("-= Initial setup SDForge =-")
     subprocess.run(["git", "clone", "--config", "core.filemode=false",
-                    "https://github.com/lllyasviel/stable-diffusion-webui-forge.git", WORKSPACE])
+                    "https://github.com/Panchovix/stable-diffusion-webui-reForge.git", WORKSPACE])
 
 os.chdir(WORKSPACE)
 
