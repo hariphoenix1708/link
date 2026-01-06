@@ -188,8 +188,8 @@ if ORIENTED:
     NGROK_AUTHTOKEN = "2uWVKLlphDhoyBtn4wlGPFlDumV_L7iq1bQBBRcmtFBc8oJQ"
     Ngrok_domain = "oriented-definitely-shepherd.ngrok-free.app"
 elif ADEQUATE:
-    NGROK_AUTHTOKEN = "2uze4kgXnRaAOX4za98T3CPThn5_6Po5HS2TbQTfMKSMLnmT4"
-    Ngrok_domain = "adequate-globally-herring.ngrok-free.app"
+    NGROK_AUTHTOKEN = "2SVfPekz6a7YTrM0V6FoZBeQblN_WV4nWZsvjRRAjSMubeS"
+    Ngrok_domain = "midge-major-falcon.ngrok-free.app"
 else:
     NGROK_AUTHTOKEN = None
     Ngrok_domain = None
