@@ -45,13 +45,16 @@ if INSTALL_DEPS:
     subprocess.run(["apt", "--fix-broken", "install", "-y"])
     subprocess.run(["apt", "-y", "install", "-qq", "aria2"])
     urllib.request.urlretrieve(
-        "https://github.com/hariphoenix1708/link/raw/refs/heads/main/requirements.txt",
+        #"https://github.com/hariphoenix1708/link/raw/refs/heads/main/requirements.txt",
+        "https://raw.githubusercontent.com/lllyasviel/stable-diffusion-webui-forge/refs/heads/py3.12/requirements_versions.txt"
         "requirements.txt"
     )
     subprocess.run(["pip", "cache", "purge"])
-    '''
+    
     subprocess.run(["pip", "install", "-qq", "-r", "requirements.txt"])
-    '''
+
+    subprocess.run(["pip", "install", "-qq", "pyngrok", "fastapi", "insightface", "ZipUnicode"])
+    
 
 
 def get_filename_from_url(url):
