@@ -46,7 +46,7 @@ if INSTALL_DEPS:
     subprocess.run(["apt", "-y", "install", "-qq", "aria2"])
     urllib.request.urlretrieve(
         #"https://github.com/hariphoenix1708/link/raw/refs/heads/main/requirements.txt",
-        "https://raw.githubusercontent.com/lllyasviel/stable-diffusion-webui-forge/refs/heads/py3.12/requirements_versions.txt"
+        "https://raw.githubusercontent.com/lllyasviel/stable-diffusion-webui-forge/py3.12/requirements_versions.txt"
         "requirements_versions.txt"
     )
     subprocess.run(["pip", "cache", "purge"])
