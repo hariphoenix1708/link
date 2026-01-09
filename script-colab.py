@@ -47,11 +47,11 @@ if INSTALL_DEPS:
     urllib.request.urlretrieve(
         #"https://github.com/hariphoenix1708/link/raw/refs/heads/main/requirements.txt",
         "https://raw.githubusercontent.com/lllyasviel/stable-diffusion-webui-forge/refs/heads/py3.12/requirements_versions.txt"
-        "requirements.txt"
+        "requirements_versions.txt"
     )
     subprocess.run(["pip", "cache", "purge"])
     
-    subprocess.run(["pip", "install", "-qq", "-r", "requirements.txt"])
+    subprocess.run(["pip", "install", "-qq", "-r", "requirements_versions.txt"])
 
     subprocess.run(["pip", "install", "-qq", "pyngrok", "fastapi", "insightface", "ZipUnicode"])
     
