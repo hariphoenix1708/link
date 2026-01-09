@@ -158,10 +158,12 @@ try:
 except FileNotFoundError:
     pass
 
+'''
 urllib.request.urlretrieve(
     "https://raw.githubusercontent.com/hariphoenix1708/link/refs/heads/main/ui-config.json",
     "ui-config.json"
 )
+'''
 
 import zipfile
 
