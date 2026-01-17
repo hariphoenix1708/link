@@ -31,7 +31,7 @@ WORKSPACE = 'stable-diffusion-webui-forge'
 if not os.path.exists(WORKSPACE):
     print("-= Initial setup SDForge =-")
     subprocess.run(["git", "clone", "--config", "core.filemode=false",
-                    "https://github.com/lllyasviel/stable-diffusion-webui-forge.git", WORKSPACE])
+                    "https://github.com/Panchovix/stable-diffusion-webui-reForge.git", WORKSPACE])
 
 os.chdir(WORKSPACE)
 
@@ -54,10 +54,13 @@ if INSTALL_DEPS:
     subprocess.run(["pip", "install", "pickleshare"])
     subprocess.run(["pip", "install", "basicsr"])
     subprocess.run(["pip", "install", "insightface"])
-    subprocess.run(["pip", "uninstall", "-y", "xformers", "torch", "torchvision", "torchaudio"])
-    '''
-    subprocess.run(["pip", "install", "-q", "-r", "requirements.txt"])
-    '''
+    #subprocess.run(["pip", "uninstall", "-y", "xformers", "torch", "torchvision", "torchaudio"])
+    urllib.request.urlretrieve(
+        "https://github.com/hariphoenix1708/link/raw/refs/heads/main/requirements.txt",
+        "requirements.txt"
+    )
+    subprocess.run(["uv", "cache", "clean"])
+    subprocess.run(["uv", "pip", "install", "--system", "-q", "-r", "requirements.txt"])
 
 
 def get_filename_from_url(url):
@@ -194,8 +197,8 @@ if ORIENTED:
     NGROK_AUTHTOKEN = "2uWVKLlphDhoyBtn4wlGPFlDumV_L7iq1bQBBRcmtFBc8oJQ"
     Ngrok_domain = "oriented-definitely-shepherd.ngrok-free.app"
 elif ADEQUATE:
-    NGROK_AUTHTOKEN = "2uze4kgXnRaAOX4za98T3CPThn5_6Po5HS2TbQTfMKSMLnmT4"
-    Ngrok_domain = "adequate-globally-herring.ngrok-free.app"
+    NGROK_AUTHTOKEN = "2SVfPekz6a7YTrM0V6FoZBeQblN_WV4nWZsvjRRAjSMubeS"
+    Ngrok_domain = "midge-major-falcon.ngrok-free.app"
 else:
     NGROK_AUTHTOKEN = None
     Ngrok_domain = None
@@ -222,6 +225,7 @@ else:
     share = "--share"
 
 # Launch WebUI
-LAUNCH_CMD = f"python launch.py --xformers-flash-attention --cuda-stream --always-high-vram --pin-shared-memory --api --listen --enable-insecure-extension-access --disable-console-progressbars --no-hashing --precision autocast --upcast-sampling"
+#LAUNCH_CMD = f"python launch.py --xformers-flash-attention --cuda-stream --always-high-vram --pin-shared-memory --api --listen --enable-insecure-extension-access --disable-console-progressbars --no-hashing --precision autocast --upcast-sampling"
+LAUNCH_CMD = f"python launch.py {share} --api --listen --enable-insecure-extension-access {auth} --disable-console-progressbars --no-hashing"
 print(f"Starting WebUI with command:\n{LAUNCH_CMD}")
 os.system(LAUNCH_CMD)
