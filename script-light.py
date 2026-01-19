@@ -54,13 +54,15 @@ if INSTALL_DEPS:
     subprocess.run(["pip", "install", "pickleshare"])
     subprocess.run(["pip", "install", "basicsr"])
     subprocess.run(["pip", "install", "insightface"])
-    #subprocess.run(["pip", "uninstall", "-y", "xformers", "torch", "torchvision", "torchaudio"])
+    subprocess.run(["pip", "uninstall", "-y", "xformers", "torch", "torchvision", "torchaudio"])
+    '''
     urllib.request.urlretrieve(
         "https://github.com/hariphoenix1708/link/raw/refs/heads/main/requirements.txt",
         "requirements.txt"
     )
     subprocess.run(["uv", "cache", "clean"])
     subprocess.run(["uv", "pip", "install", "--system", "-q", "-r", "requirements.txt"])
+    '''
 
 
 def get_filename_from_url(url):
