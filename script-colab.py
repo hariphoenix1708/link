@@ -193,13 +193,13 @@ else:
 
 
 # NGROK CONFIG
-ORIENTED = False
-ADEQUATE = True
+COMIC = False #hk1708
+MIDGE = True #vk872
 
-if ORIENTED:
-    NGROK_AUTHTOKEN = "2uWVKLlphDhoyBtn4wlGPFlDumV_L7iq1bQBBRcmtFBc8oJQ"
-    Ngrok_domain = "oriented-definitely-shepherd.ngrok-free.app"
-elif ADEQUATE:
+if COMIC:
+    NGROK_AUTHTOKEN = "1ec4Az5OT9kYyABKxKnhLUl5jpH_7h6HjLDYkybGRS93M5aqG"
+    Ngrok_domain = "comic-caribou-frankly.ngrok-free.app"
+elif MIDGE:
     NGROK_AUTHTOKEN = "2SVfPekz6a7YTrM0V6FoZBeQblN_WV4nWZsvjRRAjSMubeS"
     Ngrok_domain = "midge-major-falcon.ngrok-free.app"
 else:
