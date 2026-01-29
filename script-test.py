@@ -179,8 +179,8 @@ else:
 
 
 # NGROK CONFIG
-COMIC = False #hk1708
-MIDGE = True #vk872
+COMIC = True #hk1708
+MIDGE = False #vk872
 
 if COMIC:
     NGROK_AUTHTOKEN = "1ec4Az5OT9kYyABKxKnhLUl5jpH_7h6HjLDYkybGRS93M5aqG"
