@@ -44,6 +44,7 @@ if INSTALL_DEPS:
     subprocess.run(["sudo", "apt-get", "update", "-y"])
     subprocess.run(["sudo", "apt", "--fix-broken", "install", "-y"])
     subprocess.run(["sudo", "apt", "-y", "install", "-qq", "aria2"])
+    subprocess.run(["pip", "install", "setuptools==80", "pip==25"])
     '''
     urllib.request.urlretrieve(
         "https://github.com/hariphoenix1708/link/raw/refs/heads/main/requirements.txt",
