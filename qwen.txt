@@ -1,0 +1,5 @@
+[]MODELS
+$https://huggingface.co/nunchaku-ai/nunchaku-qwen-image-edit-2509/resolve/main/lightning-251115/svdq-int4_r128-qwen-image-edit-2509-lightning-8steps-251115.safetensors  **svdq-int4_r128-qwen-image-edit-2509-lightning-8steps-251115.safetensors**
+
+[]VAE
+$https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors
