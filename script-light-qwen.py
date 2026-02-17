@@ -55,7 +55,7 @@ if INSTALL_DEPS:
     subprocess.run(["pip", "install", "uv"])
     subprocess.run(["uv", "pip", "install", "setuptools==80", "pip==25"])
     subprocess.run(["uv", "pip", "uninstall", "-y", "numpy", "pandas", "scikit-learn"])
-    subprocess.run(["uv", "pip", "cache", "purge"])
+    subprocess.run(["uv", "cache", "clean"])
     subprocess.run(["uv", "pip", "install", "numpy==1.26.4", "pandas==2.2.2", "scikit-learn==1.5.1", "--no-cache-dir"])
     subprocess.run(["uv", "pip", "install", "-r", "requirements.txt"])
 
