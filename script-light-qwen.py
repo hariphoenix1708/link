@@ -58,7 +58,7 @@ if INSTALL_DEPS:
     subprocess.run(["pip", "install", "pickleshare"])
     subprocess.run(["pip", "install", "basicsr"])
     subprocess.run(["pip", "install", "insightface"])
-    subprocess.run(["pip", "uninstall", "-y", "xformers", "torch", "torchvision", "torchaudio"])
+    #subprocess.run(["pip", "uninstall", "-y", "xformers", "torch", "torchvision", "torchaudio"])
 
 
 aria2c --console-log-level=error -c -x 16 -s 16 -k 1M "https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors" -d ./models/Stable-diffusion -o qwen_image_edit.safetensors
