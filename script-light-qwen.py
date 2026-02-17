@@ -142,6 +142,6 @@ else:
 # Launch WebUI
 #LAUNCH_CMD = f"python launch.py --xformers-flash-attention --cuda-stream --always-high-vram --pin-shared-memory --api --listen --enable-insecure-extension-access --disable-console-progressbars --no-hashing --precision autocast --upcast-sampling"
 #LAUNCH_CMD = f"python launch.py {share} --api --listen --cuda-stream --enable-insecure-extension-access {auth} --disable-console-progressbars"
-LAUNCH_CMD = f"python launch.py {share} --api --listen --enable-insecure-extension-access {auth} --disable-console-progressbars"
+LAUNCH_CMD = f"python launch.py {share} --api --listen --cuda-malloc --cuda-stream --pin-shared-memory --enable-insecure-extension-access {auth} --disable-console-progressbars"
 print(f"Starting WebUI with command:\n{LAUNCH_CMD}")
 os.system(LAUNCH_CMD)
