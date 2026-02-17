@@ -96,6 +96,28 @@ subprocess.run([
     "-o", "qwen_image_vae.safetensors"
 ])
 
+# Refresh config file
+try:
+    os.remove("config.json")
+except FileNotFoundError:
+    pass
+
+urllib.request.urlretrieve(
+    "https://huggingface.co/phoenix-1708/DR_NED/resolve/main/config.json",
+    "config.json"
+)
+
+# Refresh ui-config file
+try:
+    os.remove("ui-config.json")
+except FileNotFoundError:
+    pass
+
+urllib.request.urlretrieve(
+    "https://huggingface.co/phoenix-1708/DR_NED/resolve/main/ui-config.json",
+    "ui-config.json"
+)
+
 
 # NGROK CONFIG
 COMIC = True #hk1708
