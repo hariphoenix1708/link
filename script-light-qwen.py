@@ -52,20 +52,13 @@ if INSTALL_DEPS:
     subprocess.run(["sudo", "apt-get", "update", "-y"])
     subprocess.run(["sudo", "apt", "--fix-broken", "install", "-y"])
     subprocess.run(["sudo", "apt", "-y", "install", "-qq", "aria2", "ffmpeg"])
-    subprocess.run(["pip", "install", "setuptools==80", "pip==25"])
+    subprocess.run(["pip", "install", "uv"])
+    subprocess.run(["uv", "pip", "install", "setuptools==80", "pip==25"])
+    subprocess.run(["uv", "pip", "uninstall", "-y", "numpy", "pandas", "scikit-learn"])
+    subprocess.run(["uv", "pip", "cache", "purge"])
+    subprocess.run(["uv", "pip", "install", "numpy==1.26.4", "pandas==2.2.2", "scikit-learn==1.5.1", "--no-cache-dir"])
+    subprocess.run(["uv", "pip", "install", "-r", "requirements.txt"])
 
-    #subprocess.run(["pip", "cache", "purge"])
-    subprocess.run(["pip", "uninstall", "-y", "numpy", "pandas", "scikit-learn"])
-    subprocess.run(["pip", "cache", "purge"])
-    subprocess.run(["pip", "install", "numpy==1.26.4", "pandas==2.2.2", "scikit-learn==1.5.1", "--no-cache-dir"])
-    subprocess.run(["pip", "install", "-r", "requirements.txt"])
-    #subprocess.run(["pip", "uninstall", "-y", "numpy", "pandas", "scikit-learn"])
-    #subprocess.run(["pip", "cache", "purge"])
-    #subprocess.run(["pip", "install", "numpy==1.26.4", "pandas==2.2.2", "scikit-learn==1.5.1", "--no-cache-dir"])
-    #subprocess.run(["pip", "install", "pickleshare"])
-    #subprocess.run(["pip", "install", "basicsr"])
-    #subprocess.run(["pip", "install", "insightface"])
-    #subprocess.run(["pip", "uninstall", "-y", "xformers", "torch", "torchvision", "torchaudio"])
 
 subprocess.run([
     "aria2c",
