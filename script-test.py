@@ -84,7 +84,7 @@ def get_optimal_workers():
 def clean_line(line):
     return line.split('**')[0].strip()
 
-def download_from_txt(txt_url, token="a2fab2bb78fa416e631f84f42595e62e"):
+def download_from_txt(txt_url, token="52c41327b3f7485898faf9e92a29e008"):
     from concurrent.futures import ThreadPoolExecutor
 
     model_dirs = {
