@@ -28,7 +28,7 @@ PASSWORD = ""
 
 # Civitai API token (set this as an environment variable in Kaggle)
 # Example:
-# os.environ["CIVITAI_TOKEN"] = "your_api_key_here"
+os.environ["CIVITAI_TOKEN"] = "a2fab2bb78fa416e631f84f42595e62e"
 CIVITAI_TOKEN = os.getenv("CIVITAI_TOKEN", "")
 
 MAX_RETRIES = 3
