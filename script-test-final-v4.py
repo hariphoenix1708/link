@@ -19,7 +19,7 @@ except ImportError:
     from pyngrok import ngrok, conf
 
 # Kaggle secret (preferred) with environment fallback
-CIVITAI_TOKEN = ""
+CIVITAI_TOKEN = "52c41327b3f7485898faf9e92a29e008"
 try:
     from kaggle_secrets import UserSecretsClient
     secret_label = "CIVITAI_TOKEN"
