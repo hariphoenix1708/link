@@ -15,6 +15,8 @@ import requests
 # Do not disable Xet here; Kaggle can use the native fast path when hf_xet is available.
 os.environ.pop("HF_HUB_DISABLE_XET", None)
 os.environ.setdefault("HF_HUB_ENABLE_HF_TRANSFER", "1")
+os.environ.setdefault("HF_XET_HIGH_PERFORMANCE", "1")
+os.environ.setdefault("HF_HUB_DISABLE_TELEMETRY", "1")
 
 def _ensure_hf_stack():
     try:
@@ -100,8 +102,19 @@ if INSTALL_DEPS:
     subprocess.run(["uv", "cache", "clean"])
     subprocess.run(["uv", "pip", "install", "--system", "-q", "-r", "requirements.txt"])
     # Restore fast Hugging Face transfers for Xet-backed repos.
-    subprocess.run(["uv", "pip", "install", "--system", "-q", "hf_xet"], check=False)
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "hf_xet"], check=False)
+    # Fast install with uv (preferred)
+    subprocess.run(
+        ["uv", "pip", "install", "--system", "-q", "-U", "huggingface_hub[hf_xet]", "hf_xet"],
+        check=False,
+    )
+
+# Fallback to pip
+    subprocess.run(
+        [sys.executable, "-m", "pip", "install", "-q", "-U", "huggingface_hub[hf_xet]", "hf_xet"],
+        check=False,
+    )
+    #subprocess.run(["uv", "pip", "install", "--system", "-q", "hf_xet"], check=False)
+    #subprocess.run([sys.executable, "-m", "pip", "install", "-q", "hf_xet"], check=False)
 
 
 def get_filename_from_url(url: str) -> str:
