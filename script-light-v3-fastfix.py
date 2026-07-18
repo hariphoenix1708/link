@@ -13,6 +13,8 @@ import requests
 # Prefer the fast Hugging Face transfer backend when available.
 os.environ.pop("HF_HUB_DISABLE_XET", None)
 os.environ.setdefault("HF_HUB_ENABLE_HF_TRANSFER", "1")
+os.environ.setdefault("HF_XET_HIGH_PERFORMANCE", "1")
+os.environ.setdefault("HF_HUB_DISABLE_TELEMETRY", "1")
 
 # Install pyngrok if not already installed
 try:
@@ -87,6 +89,16 @@ if INSTALL_DEPS:
     subprocess.run([sys.executable, "-m", "pip", "install", "pickleshare"], check=True)
     subprocess.run([sys.executable, "-m", "pip", "install", "basicsr"], check=True)
     subprocess.run([sys.executable, "-m", "pip", "install", "insightface"], check=True)
+    subprocess.run(
+        ["uv", "pip", "install", "--system", "-q", "-U", "huggingface_hub[hf_xet]", "hf_xet"],
+        check=False,
+    )
+
+# Fallback to pip
+    subprocess.run(
+        [sys.executable, "-m", "pip", "install", "-q", "-U", "huggingface_hub[hf_xet]", "hf_xet"],
+        check=False,
+    )
 
     # Keep the remote requirements workflow from the working Kaggle script.
     urllib.request.urlretrieve(
