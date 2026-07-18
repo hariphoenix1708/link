@@ -30,7 +30,11 @@ BRANCH = "neo"
 # Skip Google Drive setup for local script
 
 # Clone repo if not exists
-    
+os.environ.pop("HF_HUB_DISABLE_XET", None)
+os.environ.setdefault("HF_HUB_ENABLE_HF_TRANSFER", "1")
+os.environ.setdefault("HF_XET_HIGH_PERFORMANCE", "1")
+os.environ.setdefault("HF_HUB_DISABLE_TELEMETRY", "1")
+
 if not os.path.exists(WORKSPACE):
     print("-= Initial setup SDForge =-")
     subprocess.run([
@@ -57,6 +61,15 @@ if INSTALL_DEPS:
     subprocess.run(["pip", "cache", "purge"])
     subprocess.run(["pip", "install", "numpy==1.26.4", "pandas==2.2.2", "scikit-learn==1.5.1", "--no-cache-dir"])
     subprocess.run(["pip", "install", "-r", "requirements.txt"])
+    subprocess.run(
+        ["uv", "pip", "install", "--system", "-q", "-U", "huggingface_hub[hf_xet]", "hf_xet"],
+        check=False,
+    )
+# Fallback to pip
+    subprocess.run(
+        [sys.executable, "-m", "pip", "install", "-q", "-U", "huggingface_hub[hf_xet]", "hf_xet"],
+        check=False,
+    )
 
 
 subprocess.run([
