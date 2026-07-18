@@ -90,6 +90,7 @@ if INSTALL_DEPS:
     )
     subprocess.run(["uv", "cache", "clean"])
     subprocess.run(["uv", "pip", "install", "--system", "-q", "-r", "requirements.txt"])
+    subprocess.run(["uv", "pip", "install", "huggingface_hub[hf_xet]"])
 
 
 def get_filename_from_url(url: str) -> str:
