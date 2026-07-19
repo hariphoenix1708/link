@@ -90,18 +90,18 @@ def download_hf_model(repo_id: str, filename: str, local_dir: str):
 
 hf_download_jobs = [
     (
-        "Comfy-Org/Qwen-Image-Edit_ComfyUI",
-        "split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors",
+        "Comfy-Org/z_image_turbo",
+        "split_files/diffusion_models/z_image_turbo_bf16.safetensors",
         "./models/Stable-diffusion",
     ),
     (
-        "Comfy-Org/Qwen-Image_ComfyUI",
-        "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "Comfy-Org/z_image_turbo",
+        "split_files/text_encoders/qwen_3_4b.safetensors",
         "./models/text_encoder",
     ),
     (
-        "Comfy-Org/Qwen-Image_ComfyUI",
-        "split_files/vae/qwen_image_vae.safetensors",
+        "Comfy-Org/Lumina_Image_2.0_Repackaged",
+        "split_files/vae/ae.safetensors",
         "./models/VAE",
     ),
 ]
