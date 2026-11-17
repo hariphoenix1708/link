@@ -577,8 +577,8 @@ COMIC = True  # hk1708
 MIDGE = False  # vk872
 
 if COMIC:
-    NGROK_AUTHTOKEN = "1ec4Az5OT9kYyABKxKnhLUl5jpH_7h6HjLDYkybGRS93M5aqG"
-    Ngrok_domain = "comic-caribou-frankly.ngrok-free.app"
+    NGROK_AUTHTOKEN = "3MEA29gn5nl566vlCXVKa6Z2ohK_4PcYkg7KVb8QFsnZxmW4t"
+    Ngrok_domain = "sliver-turbojet-subdued.ngrok-free.dev"
 elif MIDGE:
     NGROK_AUTHTOKEN = "2SVfPekz6a7YTrM0V6FoZBeQblN_WV4nWZsvjRRAjSMubeS"
     Ngrok_domain = "midge-major-falcon.ngrok-free.app"
