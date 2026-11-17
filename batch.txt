@@ -43,7 +43,7 @@ $https://huggingface.co/phoenix-1708/DR_NED/resolve/main/AissistXLv2-neg.pt
 &https://civitai.com/api/download/models/77169 **BadDream**
 &https://civitai.com/api/download/models/145996?type=Negative&format=Other **epiCPhotoGasm-colorfulPhoto-neg**
 &https://civitai.com/api/download/models/145994?type=Negative&format=Other **epiCPhotoGasm-softPhoto-neg**
-&https://civitai.com/api/download/models/1690589?type=Negative&format=Other **CyberRealistic_Negative_PONY_V2-neg**
+$https://civitai.com/api/download/models/1690589?type=Negative&format=Other **CyberRealistic_Negative_PONY_V2-neg**
 &https://civitai.com/api/download/models/1223627?type=Negative&format=Other **Stable_Yogis_SD1.5_Negatives-neg**
 &https://civitai.com/api/download/models/772342?type=Negative&format=Other **Stable_Yogis_PDXL_Negatives-neg**
 
