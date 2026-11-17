@@ -1,0 +1,76 @@
+[]MODELS
+$https://huggingface.co/phoenix-1708/MAJIC/resolve/main/epicVisionB4-inpainting.safetensors
+$https://civitai.com/api/download/models/2883731  **waiIllustriousSDXL_v170.safetensors**
+&https://civitai.com/api/download/models/2837020  **novaAnimeXL_ilV180.safetensors**
+&https://civitai.com/api/download/models/2010753  **hassakuXLIllustrious_v30.safetensors**
+&https://civitai.com/api/download/models/1873831  **prefectIllustriousXL_v20p.safetensors**
+&https://civitai.com/api/download/models/2581228?fileId=2532407  **cyberrealisticPony_v160_fp32.safetensors**
+&https://civitai.com/api/download/models/1899516  **cyberrealisticPony_catalystV30.safetensors**
+&https://civitai.com/api/download/models/179446  **perfectWorld_v6Baked.safetensors**
+&https://civitai.com/api/download/models/1223643  **realismByStableYogi_sd15V9.safetensors**
+&https://civitai.com/api/download/models/1469033  **epicrealismXL_vxvAnewstoryRealism.safetensors**
+&https://civitai.com/api/download/models/1293903  **animergePonyXL_v50.safetensors**
+&https://civitai.com/api/download/models/1183839  **aniversePonyXL_v50.safetensors**
+&https://civitai.com/api/download/models/1199750  **prefectPonyXL_v50.safetensors**
+
+[]VAE
+$https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors
+$https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl.vae.safetensors
+
+[]EMBEDDINGS
+$https://huggingface.co/phoenix-1708/DR_NED/resolve/main/AissistXLv2.safetensors
+$https://civitai.com/api/download/models/720175  **zPDXL3**
+$https://civitai.com/api/download/models/1833157  **lazypos_v2**
+$https://civitai.com/api/download/models/1860747  **lazyneg_v3**
+$https://civitai.com/api/download/models/1550840  **lazyhand**
+$https://civitai.com/api/download/models/1558647  **lazympos**
+$https://civitai.com/api/download/models/1601074  **lazynsfw**
+$https://civitai.com/api/download/models/1667494  **lazyreal**
+$https://civitai.com/api/download/models/1473211  **lazyup7_pony**
+&https://civitai.com/api/download/models/1223635  **Stable_Yogis_SD1.5_Positives**
+&https://civitai.com/api/download/models/775151  **Stable_Yogis_PDXL_Positives**
+
+[]EMBEDDINGS-NEGATIVE
+$https://huggingface.co/embed/negative/resolve/main/EasyNegative.pt
+$https://huggingface.co/gsdf/Counterfeit-V3.0/resolve/main/embedding/EasyNegativeV2.safetensors
+$https://huggingface.co/embed/negative/resolve/main/bad-hands-5.pt
+$https://huggingface.co/embed/negative/resolve/main/ng_deepnegative_v1_75t.pt
+$https://huggingface.co/ffxvs/negative-prompts-pack/resolve/main/badhandv4.pt
+$https://civitai.com/api/download/models/77173  **UnrealisticDream**
+$https://civitai.com/api/download/models/82745  **CyberRealistic_Negative-neg**
+$https://huggingface.co/phoenix-1708/DR_NED/resolve/main/AissistXLv2-neg.pt
+&https://civitai.com/api/download/models/60938  **negative_hand-neg**
+&https://civitai.com/api/download/models/77169  **BadDream**
+&https://civitai.com/api/download/models/145996  **epiCPhotoGasm-colorfulPhoto-neg**
+&https://civitai.com/api/download/models/145994  **epiCPhotoGasm-softPhoto-neg**
+$https://civitai.com/api/download/models/1690589?fileId=1591830  **CyberRealistic_Negative_PONY_V2-neg**
+&https://civitai.com/api/download/models/1223627  **Stable_Yogis_SD1.5_Negatives-neg**
+&https://civitai.com/api/download/models/772342  **Stable_Yogis_PDXL_Negatives-neg**
+
+[]LORA
+
+$https://huggingface.co/phoenix-1708/DR_NED/resolve/main/details.zip
+$https://huggingface.co/phoenix-1708/DR_NED/resolve/main/Expressive_H-000001.safetensors
+$https://civitai.com/api/download/models/135867  **add-detail-xl**
+$https://civitai.com/api/download/models/1253442  **feet_anime_il_v2.5**
+$https://civitai.com/api/download/models/1103832  **pantyhose feet_illustrious_V1.0**
+$https://civitai.com/api/download/models/1399731  **spread pussy one hand_XL_V1.0**
+$https://civitai.com/api/download/models/530662  **dAIversityLoRASDXL-PhotoSemiReal**
+&https://civitai.com/api/download/models/970703  **milfication_pdxl_goofy**
+&https://huggingface.co/phoenix-1708/DR_NED/resolve/main/writing.zip
+&https://huggingface.co/phoenix-1708/DR_NED/resolve/main/outfit_1.zip
+&https://civitai.com/api/download/models/486156  **Hand v3 SD1.5**
+&https://civitai.com/api/download/models/1099059  **EnhancerPonyV5**
+&https://civitai.com/api/download/models/622808  **Detail-Slider-V3-By-Stable_yogi**
+&https://civitai.com/api/download/models/1065885  **Super_Multi_Detailer_By_Stable_Yogi_A1**
+&https://civitai.com/api/download/models/126294  **Realistic_Saree**
+&https://civitai.com/api/download/models/135764  **RVSaree**
+
+[]EXTENSIONS
+@https://github.com/Bing-su/adetailer
+@https://github.com/BlafKing/sd-civitai-browser-plus
+@https://github.com/Mikubill/sd-webui-controlnet
+@https://github.com/licyk/advanced_euler_sampler_extension
+@https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
+@https://github.com/imrayya/stable-diffusion-webui-Prompt_Generator
+@https://github.com/zero01101/openOutpaint-webUI-extension
